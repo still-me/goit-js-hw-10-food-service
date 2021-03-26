@@ -15,4 +15,4 @@ const clientStorage = {
     },
 }
 
-export default clientStorage
+export default clientStorage;

@@ -1,9 +1,9 @@
-import { STORAGE_KEY, checkbox, onCheckboxCheck } from './checkbox'
-import { Theme } from './theme'
+import { STORAGE_KEY, checkbox, onCheckboxCheck } from './checkbox';
+import { Theme } from './theme';
 import clientStorage from './services/clientStorage';
 
 
-loadPreviousTheme()
+loadPreviousTheme();
 
 function loadPreviousTheme() {
     const themeFromLocalStorage = clientStorage.getItem(STORAGE_KEY);

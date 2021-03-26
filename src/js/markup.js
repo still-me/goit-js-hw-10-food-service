@@ -1,6 +1,6 @@
 // import cardsMaker from '../templates/card.hbs';
-import menu from '../menu.json'
-import cardsTemplate from '../templates/cards-list.hbs'
+import menu from '../menu.json';
+import cardsTemplate from '../templates/cards-list.hbs';
 
 const menuRef = document.querySelector('.js-menu');
 
@@ -14,5 +14,5 @@ const menuRef = document.querySelector('.js-menu');
 //         .join('');
 // }
 
-menuRef.innerHTML = cardsTemplate(menu)
+menuRef.innerHTML = cardsTemplate(menu);
 
