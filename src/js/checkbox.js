@@ -1,4 +1,5 @@
-import { Theme } from './theme'
+import { Theme } from './theme';
+import clientStorage from './services/clientStorage';
 
 const bodyRef = document.querySelector('body')
 const switcher = document.querySelector('.theme-switch');
@@ -12,10 +13,10 @@ switcher.addEventListener('change', onCheckboxCheck);
 
     if (checkbox.checked) {
         changeClass(Theme.DARK, Theme.LIGHT)
-        localStorage.setItem(STORAGE_KEY, Theme.DARK )
+        clientStorage.setItem(STORAGE_KEY, Theme.DARK )
     } else {
         changeClass(Theme.LIGHT, Theme.DARK);
-        localStorage.setItem(STORAGE_KEY, Theme.LIGHT);
+        clientStorage.setItem(STORAGE_KEY, Theme.LIGHT);
     }
    
 }
